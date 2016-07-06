@@ -21,6 +21,7 @@
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<java.version>1.8</java.version>
+		<qiniu.java.sdk>7.1.0</qiniu.java.sdk>
 	</properties>
 
 	<dependencies>
@@ -43,6 +44,17 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+		<dependency>
+			<groupId>com.cloume.hsep</groupId>
+			<artifactId>commons</artifactId>
+			<version>0.0.1-DEV</version>
+		</dependency>
+		
+		<dependency>
+    		<groupId>com.qiniu</groupId>
+    		<artifactId>qiniu-java-sdk</artifactId>
+    		<version>${qiniu.java.sdk}</version>
+    	</dependency>
 	</dependencies>
 	
 	<build>
